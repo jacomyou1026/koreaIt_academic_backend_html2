@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	//가장 많이 사용
+	//register()함수 호출 시 파리미터로 넘려밭은 form태그(f)
+	//를 통해 바로 작업 수행
+	function register(f) {
+		//method : 전송타입
+		//GET : url에 변수를 포함시켜 전송.
+			//속도는 빠르나 보안적으로 취약
+		//post : url에 변수를 노출하지 않고 전송. 
+			//바이너리형태로 전송하기때문에 속도는 get에비해 느리나 
+			//보안성은 뛰어나다
+		f.method = "get";
+		f.method = "post";
+		f.action = "test.jsp";
+		f.submit();
+	}
+</script>
+</head>
+<body>
+	<form>
+		 <input required="required" name ="id" placeholder="id를 입력하세요" > <br>
+		 <input name ="pwd" placeholder="pwd를 입력하세요" required="required"><br>
+		 <input name = "jumin" placeholder="주민번호 입력" required="required"><br>
+		 
+		 <!-- this는 현재 button을 의미함 -->
+		 <!-- this.form은 이 버튼을 소유하고 있는 폼태그의 의미 -->
+		 <input type = "button" value="가입" onclick="register(this.form)">
+	</form>
+</body>
+</html>

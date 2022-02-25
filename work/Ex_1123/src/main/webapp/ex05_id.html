@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ID를 정의한 css정의</title>
+</head>
+<style>
+	/* id접근은 #을 통해서 */
+	#a1{
+	color : red;}
+	#a2{
+	color : blue;
+	}	
+	/* p{
+	border-width: 10px;
+	border-color :blue;
+	border: solid;
+	} */
+	p{
+	border: solid ;
+	
+	}
+	.box2{
+		padding :20px /* 상하좌우 */
+	}
+	.box1{
+	padding :20px 50px; /* 20px  -상하  50px - 좌우*/
+	} 
+	.box3{
+	padding :20px 50px 30px;/* 상,좌우,하 */
+	
+	}
+	.box4{
+	padding :20px 30px 50px 70px /* 시계방향 상,우,하,좌 */
+	}
+	
+</style>
+<body>
+	<!-- id는 중복된 이름으로 작성하지 않는다. -->ㅋ
+	<h1 id ="a1">아이디 연습1</h1>
+	<h1 id ="a2">아이디 연습2</h1>
+	<p class = "box1">pading</p>
+	<p class = "box2">pading</p>
+	<p class = "box3">pading</p>
+	<p class = "box4">pading</p>
+</body>
+</html>

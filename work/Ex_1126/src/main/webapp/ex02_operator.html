@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>operator</title>
+<script type="text/javascript">
+	//자바스크립트의 자료형
+	var num1 = 100;
+	var num2 = 100;
+	document.write(num1+num2+"<br>");
+	
+	num1 = "문장";
+	document.write(num1+num2+"<br>");/* 문자가됨 */
+	num1 = 10;
+	num2 =3;
+	document.write(num1 % num2,"<br>");
+	document.write("<hr>");
+	
+	var result;
+	result  = num1>num2;
+	document.write(result,"<br>");
+	
+	result  = num1!=num2;
+	document.write(result,"<br>");
+	
+	num1 = 15;
+	document.write(num1 += 5, "<br>");
+	
+	result =(num1/=3);
+	document.write(result.toFixed(1), "<br>");/*소수점1의 자리까지*/
+	
+	var age = 20;
+	result = age>=20 || age <=25;
+	if(result){
+	document.write("당신은 성인입니다.");
+	}
+	
+</script>
+</head>
+<body>
+	
+</body>
+</html>

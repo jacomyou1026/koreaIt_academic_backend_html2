@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function send(){
+		/* form태그의 name속성으로 지정해둔 fff를 찾아서 가져온다.*/
+	var f =document.fff;
+	
+	var id =f.id.value;
+	var tel =f.tel.value;
+	
+	//유효성 체크
+	
+	if(id == ''){
+		alert('id를 입력하세요')
+		return
+	}
+	if(tel == ''){
+		alert('전화번호를 입력하세요')
+		return
+	}
+	
+	f.submit();
+	}
+</script>
+</head>
+<body>
+<!--input의 name이있으면 form태그로 자동으로 넘어감-->
+<!-- input태그가 아닌 다른 태그에 name을 넣으면 의미 없음 -->
+	<form name = "fff" action="aaa.jsp">
+		<table>
+		<tr>
+			<th>ID : </th>
+			<td><input name = "id"></td>
+		</tr>
+		<tr>
+			<th>전화번호 : </th>
+			<td><input name = "tel"></td>
+		</tr>
+		<tr>
+			<td colspan="2" align="center">
+				<input type ="button" value="확인" onclick="send();">
+			</td>
+		</tr>
+		</table>
+	</form>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>margin(바깥쪽 여백)</title>
+<style type="text/css"> 
+p, div{
+border :5px solid red;
+
+}
+.box1{
+margin:20px;
+}
+.box2{
+margin:40px 50px;
+}
+.box3{
+margin:20px 50px 30px;
+}
+.box4{
+margin :20px 30px 50px 70px;
+}
+/* 0px일 시 px단위 생략가능 */
+.box5{
+margin:23px 0 0 0;
+}
+
+</style>
+
+
+</head>
+<body>
+	<p> p태그는 단락 구별이 용이하도록 기본적으로 16px정동의 마진값을 가지고 있다.</p>
+	<div class = "box1">마진 테스트중1</div>
+	<div class = "box2">마진 테스트중2</div>
+	<div class = "box3">마진 테스트중3</div>
+	<div class = "box4">마진 테스트중4</div>
+	<div class = "box5">마진 테스트중5</div>
+</body>
+</html>

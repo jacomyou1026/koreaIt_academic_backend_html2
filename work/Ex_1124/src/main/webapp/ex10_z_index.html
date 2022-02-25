@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>z_index</title>
+<style type="text/css">
+* {
+	margin: 0px;
+	padding: 0;
+}
+
+p {
+	border: 1px solid black;
+	padding: 10px;
+	width: 80px;
+	height: 80px;
+	/* 절대좌표  */
+	position:absolute; 
+	
+}
+/*z-index의 값이 클수록 화면에서는 위쪽으로 보여진다.   */
+.box1 {
+	background: yellow;
+	left: 100px; top:100px;
+	z-index: 3;
+}
+.box2 {
+	background: orange;
+	left: 130px;
+	top:130px;
+	z-index: 2; 
+}
+.box3 {
+	background: blue;
+	left: 160px ;
+	top: 160px ;
+	z-index: 1;
+}
+
+</style>
+</head>
+
+<body>
+	<p class="box1">박스1</p>
+	<p class="box2">박스2</p>
+	<p class="box3">박스3</p>
+</body>
+</html>

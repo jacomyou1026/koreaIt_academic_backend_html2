@@ -1,0 +1,8 @@
+@charset "UTF-8";
+*{
+	margin:0;padding:0;
+	text-decoration: none;
+	list-style: none;
+	/* 테이블의 테두리를 한겹으로 합쳐주는 속성 */
+	border-collapse: collapse;
+}

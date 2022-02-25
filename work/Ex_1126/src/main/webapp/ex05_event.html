@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<script type="text/javascript">
+	/* 자바스크립트의 메서드(함수) */
+	//함수 바깥에서 일반 var변수는 생성 및 사용 가능
+	var num = 0;
+	//함수 바깥에서는 검색코드를 작성할 수 없다.
+	/* var aa =  document.getElementById("a1");
+	 */
+	 function yourOk(){
+		//id가 a1인 input을 검색하여 value값을 꺼내온다.
+		//스크립트 영역에서 body영역의 태그를 검색하는 방법
+		var res = document.getElementById("a1");
+		//alert(res.value);
+		var a2 = document.getElementById("a2").value=res.value; 
+		//a2.value= res.value;
+		var a3 = document.getElementById("a3");
+		a3.innerHTML = res.value; /* 태그와 태그사이에는 innerHTML */
+		var a4 = document.getElementById("a4");
+		a4.value = "BTN";
+		
+	}
+	function send(){
+		var v5 = document.getElementById("test").value;
+		v5.type = v5.value;
+		var v6 = document.getElementById("div1");
+		v6.innerHTML = v5;
+	}
+</script>
+</head>
+<body>
+	
+		<input type="text"  placeholder= "value값을 미리 넣어놓을 수 있다." id="a1">
+		<input type="button" value = "확인" onclick="yourOk();"><br>
+		
+		<input type ="text" id=a2 ><br>
+		<p id =a3>여기에 입력</p>
+		<input type =button id =a4 value= "나도버튼">
+		<hr>
+		
+		<input id ="test" placeholder="여기에 값을 넣어주세요" >
+		<input type="button" value ="확인"onclick ="send();">
+		
+		<div id="div1">
+		
+		</div>
+</body>
+</html>
